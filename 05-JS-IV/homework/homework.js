@@ -154,20 +154,38 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
 
-  /* ------------------------- mi solucion, no funciona.
-  var producto = {
+  // ------------------------- mi solucion 1, no funciona. igual a la solución
+  /*producto['calcularPrecioDescuento'] = function() {
+      return producto['precio'] - ( producto['precio'] * producto['porcentajeDeDescuento'] );
+    }
+  
+  return producto;*/
+  // intente varias formas pero al final todas son iguales a la solución, guardé y avanzé...
+  // ------------------------- Fin
+
+  // ------------------------- mi solucion 1, no funciona. igual a la solución
+  producto['calcularPrecioDescuento'] = function() {
+    return this['precio'] - ( this['precio'] * this['porcentajeDeDescuento'] );
+  }
+
+  return producto;
+
+  // ------------------------- Fin
+
+  // ------------------------- mi solucion 2, no funciona.
+  /*var producto = {
     calcularPrecioDescuento: function() {
-      return this.precio - ( this.precio * this.porcentajeDeDescuento );
+      return producto.precio - ( producto.precio * producto.porcentajeDeDescuento );
     }
   }
   return producto;*/
   // ------------------------- Fin
 
   // ------------------------- Solución github
-  producto.calcularPrecioDescuento = function() {
+  /*producto.calcularPrecioDescuento = function() {
     return this.precio - ( this.precio * this.porcentajeDeDescuento );
   }
-  return producto;
+  return producto*/
   // ------------------------- Fin
 }
 
