@@ -190,13 +190,13 @@ Cuando estamos dentro de una función, el valor de `this` va a depender de _cóm
 < true
 ```
 
-En este ejemplo la función es invocada por el objeto global por lo tanto this hará referencia a `window`.
+En este ejemplo la función es invocada por el objeto global, por lo tanto this hará referencia a `window`.
 
 > Si usamos el modo `strict` de Javascript, el ejemplo de arriba va a devolver `undefined`, ya que no le deja al interprete _asumir_ que `this` es el objeto global.
 
 * ##### Como método de un objeto
 
-Cuando usamos el _keyword_ `this` dentro de una función que es un método de un objeto, `this` toma hace referencia al objeto sobre el cual se llamó el método:
+Cuando usamos el _keyword_ `this` dentro de una función que es un método de un objeto, `this` hace referencia al objeto sobre el cual se llamó el método:
 
 ``` javascript
 > var o = {
@@ -226,7 +226,7 @@ En este caso, _no depende_ donde hayamos definido la función, lo único que imp
 
 > console.log(o.f());
 < 37
-// el resultado es le mismo!
+// el resultado es el mismo!
 ```
 
 De todos modos, hay que tener cuidado con el keyword `this`, ya que pueden aparecer casos donde es contra intuitivo ( Como varias cosas de JavaScript ). Veamos el siguiente ejemplo:
