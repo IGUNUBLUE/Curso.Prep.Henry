@@ -27,28 +27,51 @@ function crearUsuario() {
   // ------------------------------------------------------ FIN.
 
   // FUNCIÓN CONSTRUCTOR (legacy ;))
-  function Usuario(opciones) {
+  /*function Usuario(opciones) {
     this.usuario = opciones.usuario,
-        this.nombre = opciones.nombre,
-        this.email = opciones.email,
-        this.password = opciones.password
+    this.nombre = opciones.nombre,
+    this.email = opciones.email,
+    this.password = opciones.password
   }
 
   Usuario.prototype.saludar = function() {
     return 'Hola, mi nombre es ' + this.nombre;
   }
 
+  return Usuario;*/
+  // ------------------------------------------------------ FIN.
+
+  // FUNCIÓN CONSTRUCTOR (legacy ;)) Corchete version
+  function Usuario(opciones) {
+    this['usuario'] = opciones['usuario'],
+    this['nombre'] = opciones['nombre'],
+    this['email'] = opciones['email'],
+    this['password'] = opciones['password']
+  }
+
+  Usuario.prototype.saludar = function() {
+    return 'Hola, mi nombre es ' + this['nombre'];
+  }
+
   return Usuario;
   // ------------------------------------------------------ FIN.
+
 }
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
-  Constructor.prototype.saludar = function() {
+  
+  /*Constructor.prototype.saludar = function() {
+    return 'Hello World!';
+  }*/
+
+  // Corchetes test
+  Constructor['prototype']['saludar'] = function() {
     return 'Hello World!';
   }
+
 }
 
 function agregarStringInvertida() {
