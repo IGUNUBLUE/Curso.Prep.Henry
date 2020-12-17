@@ -63,7 +63,7 @@ function agregarStringInvertida() {
     var revArray = []; 
     var lengthStr = this.length - 1; 
     
-    for(let i = lengthStr; i >= 0; i--) { // recore desde el último hasta el primer item.
+    for(let i = lengthStr; i >= 0; i--) { // recorre desde el último hasta el primer item.
         revArray.push(this[i]); 
     } 
 
