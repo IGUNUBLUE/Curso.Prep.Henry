@@ -52,9 +52,10 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var fullString = ""; 
+  var fullString = "";
   var lastWord = palabras[palabras.length - 1]; // guardando la ultima palabra ya esta no necesita espacio al final.
-  for (i = 0; i < palabras.length - 1; i++) { // recorriendo el array hasta el penultimo indice que sera el último con espacio.
+  for (i = 0; i < palabras.length - 1; i++) {
+    // recorriendo el array hasta el penultimo indice que sera el último con espacio.
     fullString = fullString + palabras[i] + " "; // concatenando todos los elementos en una variable y agregando espacio al final de cada palabra.
   }
   fullString = fullString + lastWord; // agregando el último elemento de la array, no necesita tener espacio al final.
@@ -77,7 +78,7 @@ function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var addNumber = 0; 
+  var addNumber = 0;
   for (i = 0; i < numeros.length; i++) {
     addNumber = addNumber + numeros[i];
   }
@@ -88,7 +89,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var addScore = 0; 
+  var addScore = 0;
   for (i = 0; i < resultadosTest.length; i++) {
     addScore = addScore + resultadosTest[i];
   }
@@ -111,19 +112,17 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0
-  // Si se pasa un argumento, simplemente devuélvelo
+  // Si no se pasan argumentos devuelve 0
+  // Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
   var resultMulti = 1;
   if (arguments.length === 0) {
     return 0;
-  }
-  else if (arguments.length === 1) {
+  } else if (arguments.length === 1) {
     return arguments[0];
-  }
-  else {
+  } else {
     for (i = 0; i < arguments.length; i++) {
-      resultMulti = resultMulti * arguments[i];  
+      resultMulti = resultMulti * arguments[i];
     }
   }
   return resultMulti;

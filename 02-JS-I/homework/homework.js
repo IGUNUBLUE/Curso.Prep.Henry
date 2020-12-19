@@ -13,12 +13,11 @@ const nuevoBool = false;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
-var answer = 21 % 5
+var answer = 21 % 5;
 const nuevoModulo = 21 % 5 === answer;
-
 
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
@@ -36,28 +35,28 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var suma = x + y
+  var suma = x + y;
   return suma;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var resta =  x - y
+  var resta = x - y;
   return resta;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  var mult = x * y
+  var mult = x * y;
   return mult;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  var division = x / y
+  var division = x / y;
   return division;
 }
 
@@ -68,7 +67,7 @@ function sonIguales(x, y) {
   if (x === y) {
     return true;
   }
-    return false;
+  return false;
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -122,7 +121,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 != 0 ) {
+  if (num % 2 != 0) {
     return true;
   }
   return false;
@@ -188,7 +187,6 @@ function obtenerAreaRectangulo(alto, ancho) {
   // Tu código:
   return alto * ancho;
 }
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
