@@ -1,0 +1,27 @@
+body {
+    background-image: url(../img/sky.jpg);
+}
+
+h1 {
+    color: blue;
+}
+
+img {
+    width: 400px;
+}
+
+#thirdDiv {
+    width: 500px;
+    height: 600px;
+    background-color: cornflowerblue;
+    padding: 50px;
+    border-color: crimson;
+    border-style: dotted;
+    border-radius: 10px;
+    border-width: 10px;
+}
+
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}

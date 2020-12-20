@@ -53,7 +53,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   var fullString = "";
-  var lastWord = palabras[palabras.length - 1]; // guardando la ultima palabra ya esta no necesita espacio al final.
+  var lastWord = palabras[palabras.length - 1]; // guardando la ultima palabra ya que esta no necesita espacio al final.
   for (i = 0; i < palabras.length - 1; i++) {
     // recorriendo el array hasta el penultimo indice que sera el último con espacio.
     fullString = fullString + palabras[i] + " "; // concatenando todos los elementos en una variable y agregando espacio al final de cada palabra.
