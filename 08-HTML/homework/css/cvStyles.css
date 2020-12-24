@@ -1,5 +1,6 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    background-image: url(../img/sky.jpg);
 }
 
 ol {
@@ -9,6 +10,7 @@ ol {
 
 img {
     border-radius: 10px;
+    border: 4px #ccc solid;
 }
 
 .divFather {
@@ -25,6 +27,7 @@ img {
     box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14),
                 0px 3px 14px 2px rgba(0,0,0,0.12),
                 0px 5px 5px -3px rgba(0,0,0,0.2);
+    background-color: white;
 }
 
 #header {
@@ -34,41 +37,42 @@ img {
 }
 
 #myPicture {
-    margin-top: 5%;
+    margin-top: 7%;
     margin-bottom: 2%;
 }
 
 #aboutMe {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9%;
+    padding-right: 9%;
     text-align: justify;
 }
 
 #Education {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 
 #skills {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 
 #hobbies {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 
 #explanation {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9%;
+    padding-right: 9%;
+    text-align: justify;
 }
 
 #footer {
     margin-top: 10%;
     margin-bottom: 2.5%;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9%;
+    padding-right: 9%;
     text-align: center;
 
 }
